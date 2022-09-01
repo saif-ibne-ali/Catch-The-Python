@@ -16,3 +16,13 @@ fruits.remove('mango')
 print(fruits)
 
 ##organizing List
+cars = ['bmw','audi','toyota', 'honda','maruti','tata']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+print(sorted(cars))
+
+#avoiding index error
+# print(cars[6]) --out of range
+print(cars[-2]) #backtrack

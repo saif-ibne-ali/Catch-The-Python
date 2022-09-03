@@ -29,4 +29,31 @@ for name in sorted(user_0.keys()):
     print(name.title())
 for value in user_0.values():
     print(value.title())
+##Nested Dictionary
+mango = {'color':'green','taste':'sweetish'}
+apple = {'color':'red','taste':'sweetish'}
+pineapple = {'color':'greenish','taste':'sweetish'}
+fruit = [mango,apple,pineapple]
+print(fruit)
 
+for item in fruit[0:3]:
+    if item['color']=='red':
+        item['color']='red-greenish'
+        item['taste']='sweet'
+print(fruit)
+
+##A dictionary in a Dictionary
+flowers = {
+    'rose':{
+        'color':['red','green'],
+        'popularity':'high'
+    },
+    'lilly':{
+        'color':['white','pink'],
+        'popularity':'low'
+    }
+}  
+for k,v in flowers.items():
+    print("\nName "+k)
+    print("color :"+str(v['color']))
+    print("popularity : "+str(v['popularity']))  
